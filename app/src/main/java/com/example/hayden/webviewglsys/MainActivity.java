@@ -15,14 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if(isNetworkStatusAvailable (getApplicationContext())) {
-            Toast.makeText(getApplicationContext(), "internet available", Toast.LENGTH_SHORT).show();
             setContentView(R.layout.activity_main);
             String url = "https://portalna.net-cents.com";
             WebView view=(WebView) this.findViewById(R.id.webView);
             view.getSettings().setJavaScriptEnabled(true);
             view.loadUrl(url);
         } else {
-            Toast.makeText(getApplicationContext(), "Internet connection required", Toast.LENGTH_SHORT).show();
             setContentView(R.layout.no_internet);
 
         }
