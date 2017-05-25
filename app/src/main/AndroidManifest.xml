@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/newicons"
+        android:icon="@mipmap/squareicons"
         android:label="NetCents - Pay Your Way"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
