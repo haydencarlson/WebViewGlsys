@@ -1,4 +1,4 @@
-package com.example.hayden.webviewglsys;
+package com.NetCents.webApp.webView;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -6,7 +6,6 @@ import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(isNetworkStatusAvailable (getApplicationContext())) {
             setContentView(R.layout.activity_main);
-            String url = "https://portalna.net-cents.com";
+            String url = "https://portal.net-cents.com";
             WebView view=(WebView) this.findViewById(R.id.webView);
             view.getSettings().setJavaScriptEnabled(true);
             view.loadUrl(url);
